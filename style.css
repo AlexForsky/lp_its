@@ -2,6 +2,10 @@ html, body {
 	/*max-width: 1180px;*/
 }
 
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
 
 
 
@@ -76,3 +80,70 @@ NAV
  	font-size: 14px;
  	color: #666666;
  }
+
+ /*
+ FIRST_BLOCK
+ */
+ .first_block {
+  background-image: url(img/background11.jpg) center no-repeat;
+  min-height: 690px;
+  display: flex;
+  justify-content: flex-end;
+ }
+
+ .first__block__right {
+  max-width: 250px;
+ }
+
+/*
+FORM
+*/
+.first__block__form {
+  display: flex;
+  max-width: 200px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid #999999;
+  border-radius: 3px;
+  align-items: stretch;
+  padding: 10px;
+  margin: 10px;
+  background-color: #CCCCCC;
+}
+
+
+.first__block__form_input {
+  margin: 10px;
+  /*border-radius: 1px;*/
+  border-color: #999999;
+
+  padding: 3px;
+}
+
+
+.first__block__form_input:hover {
+  border-color: #003366;
+  background-color: #FFFFCC;
+}
+
+.first__block__form__label {
+  padding: 3px 0 0 10px;
+  color: #666666;
+}
+
+.first__block__form_button {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  margin: 10px;
+} 
+.first__block__form_button:hover { background: rgb(53, 167, 110); }
+.first__block__form_button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
