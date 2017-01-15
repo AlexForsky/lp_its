@@ -1,5 +1,10 @@
 html, body {
-	/*max-width: 1180px;*/
+	/*max-width: 1180px;
+  background-color: #FFFFCC;*/
+}
+
+body {
+  font-family: 'El Messiri', sans-serif;
 }
 
 .wrap {
@@ -84,15 +89,32 @@ NAV
  /*
  FIRST_BLOCK
  */
- .first_block {
-  background-image: url(img/background11.jpg) center no-repeat;
+ .first__block {
+  background-image: url(img/background11.jpg) ;
   min-height: 690px;
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+
+ .first__block__left {
+  max-width: 600px;
+  display: block;
+ }
+
+ .first__block__left-title {
+  padding: 15px 35px;
+  color: #CC0033;
+  font-size: 66px;
+  margin: 0;
+  
  }
 
  .first__block__right {
-  max-width: 250px;
+  max-width: 30%;
+  margin-right: 20px;
  }
 
 /*
@@ -100,17 +122,21 @@ FORM
 */
 .first__block__form {
   display: flex;
-  max-width: 200px;
+  width: 250px;
   flex-wrap: wrap;
   flex-direction: column;
   border: 2px solid #999999;
   border-radius: 3px;
   align-items: stretch;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 36px 10px 36px;
   background-color: #CCCCCC;
 }
-
+.first__block__form-title {
+  padding: 5px 10px;
+  margin: 0;
+  color: #666666;
+}
 
 .first__block__form_input {
   margin: 10px;
@@ -146,4 +172,28 @@ FORM
 .first__block__form_button:active {
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+/*
+INTRO
+*/
+.intro {
+  background-image: url(img/background22.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__item {
+width: 20%;
+margin: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.intro__item-text {
+  color: #CC0033;
+  font-size: 20px;
 }
